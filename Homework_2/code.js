@@ -123,6 +123,21 @@ console.log("Network is currently " + connection);
 
 // Task 2 Declare functions
 
+// Say hello function
+
+function greet() {
+    console.log("Hello, World!");
+}
+
+greet()
+
+// Say hello with parameters
+function greet(firstName, lastName) {
+    console.log("Hello " + firstName + " " + lastName);
+}
+
+greet("Demjan AnaTOLI", "Golubov")
+
 // Add nums Function
 function addNumbers (a,b){
     return a + b
@@ -130,33 +145,50 @@ function addNumbers (a,b){
 
 console.log (addNumbers (1,5))
 
+// Double a number with arrows
 
+let double = n => n * 2;
 
+console.log(double(10))
 
-//Task 3 F to C
+// Bark with arrows
+
+bark = () => console.log ("Woof")
+
+bark()
+
+// Task 3 F to C
 
 function toF(c) {
     return ((9/5*(c))+32);
 }
+
 let C2F = toF(-40);
 
 console.log (C2F)
 
-//Task 4 C to F
+// Task 4 C to F
 
 function toC (f) {
     return (5/9) * (f-32);
 }
+
 let F2C = toC(-40);
 
 console.log (F2C)
 
-//Task 5 Feet to Metersn
+// Task 5 Feet to Metersn
 
-function toFeet(m) {
-    return m*3.2808
+function toMeters(feet) {
+    return feet/3.2808
 }
 
-let convert = toFeet(20)
+console.log (toMeters(50))
 
-console.log(convert)
+// Task 6 Arrays (five towns)
+
+const towns = ["Skopje", "Bitola", "Ohrid","Veles", "Tetovo"]
+
+// Task 7 Arrays (ten states)
+const states = ["New York", "California", "Oregon", "Washington", "Texas", "Colorado", "Alabama", "Kentucky", "Delaware", "Massachusetts"]
+
