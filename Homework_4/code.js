@@ -20,7 +20,7 @@ console.log(city);
 
 console.log(`The three most populous cites are ${city[0].name}, ${city[1].name} and ${city[2].name}`) //This works provided we've already sorted them
 
-// Task 3 = What are the cities starting with A and have more than 1mil population
+// Task 3 = Which cities start with A and have more than 1mil population
 
 let findCityA = city.find(city => city.name.startsWith('A') && city.population > 1000000);
 console.log(findCityA)
