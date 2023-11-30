@@ -78,8 +78,8 @@ window.onload = () => {
     createTable(books, 'Books');
     
     document.querySelector('button').addEventListener('click', () => {
-        var table = document.querySelector('table');
-        var lastRow = table.rows[table.rows.length - 1];
+        let table = document.querySelector('table');
+        let lastRow = table.rows[table.rows.length - 1];
         if (lastRow) {
             table.deleteRow(table.rows.length - 1);
         }
